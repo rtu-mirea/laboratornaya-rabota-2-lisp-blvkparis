@@ -1,0 +1,5 @@
+(defun del_func (index list)
+  (cond ((null list) nil)
+  ((zerop index) (cdr list))
+  (t (cons (car list) (del_func (1- index) (cdr list))))))
+(del_func 2 (list 12 59 82 91 32 84 56 22))
