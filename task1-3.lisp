@@ -1,5 +1,5 @@
 (defun index (e lst)
-      (cond ((eq lst nil) "НЕ НАЙДЕН!" )
+      (cond ((eq lst nil) "Элемент не найден!" )
         ((eq e (car lst)) 0)
         (t (+ 1 (index e (cdr lst))))))
 
