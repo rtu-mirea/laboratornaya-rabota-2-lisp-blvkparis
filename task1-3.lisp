@@ -1,7 +1,8 @@
 (defun index (e lst)
-      (if (null lst) 
-      (if nil (reverse nil) 0)
-      (if (equal e (car list))
-        (t (+ 1 (index e (cdr lst)))))))
+    (loop
+    for element in lst
+    and position from 0
+    when (eql element e)
+        collect position))
 
-(index '2 '(12 13 14 2 16 18))
+(print(index '0 '(12 13 14 2 16 18)))
